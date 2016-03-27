@@ -22,7 +22,7 @@ import java.util.Iterator;
 
         @Override
         public boolean hasNext() {
-            for (int i = 6; i >= 0; i--) {
+            for (int i = troco.getPapeisMoeda().length; i >= 0; i--) {
                 if (troco.getPapeisMoeda()[i] != null) {
                     return true;
                 }
@@ -33,7 +33,7 @@ import java.util.Iterator;
         @Override
         public PapelMoeda next() {
             PapelMoeda ret = null;
-            for (int i = 6; i >= 0 && ret == null; i--) {
+            for (int i = troco.getPapeisMoeda().length; i >= 0 && ret == null; i--) {
                 if (troco.getPapeisMoeda()[i] != null) {
                     ret = troco.getPapeisMoeda()[i];
                     troco.getPapeisMoeda()[i] = null;
