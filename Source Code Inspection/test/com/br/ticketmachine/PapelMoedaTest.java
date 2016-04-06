@@ -19,23 +19,23 @@ import static org.junit.Assert.*;
  * @author 41404998
  */
 public class PapelMoedaTest {
-    
+
     public PapelMoedaTest() {
-   
+
     }
+
     @Test
-    public void inicializacaoTest(){
-        PapelMoeda papelMoeda = new PapelMoeda(50,3);
+    public void inicializacaoTest() {
+        PapelMoeda papelMoeda = new PapelMoeda(50, 3);
         Assert.assertEquals(3, papelMoeda.getQuantidade());
         Assert.assertEquals(50, papelMoeda.getValor());
     }
+
     @Test
-    public void inicializacaoNegativaTest(){
-        PapelMoeda papelMoeda = new PapelMoeda(-20,-3);
+    public void inicializacaoNegativaTest() {
+        PapelMoeda papelMoeda = new PapelMoeda(-20, -3);
         Assert.assertEquals(-20, papelMoeda.getValor());
         Assert.assertEquals(-3, papelMoeda.getQuantidade());
     }
-    
-    
-    
+
 }
