@@ -5,8 +5,11 @@
  */
 package com.br.ticketmachine;
 
+import br.calebe.ticketmachine.core.PapelMoeda;
+import br.calebe.ticketmachine.core.Troco;
 import org.junit.After;
 import org.junit.AfterClass;
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -20,26 +23,28 @@ public class TrocoTest {
     
     public TrocoTest() {
     }
-    
-    @BeforeClass
-    public static void setUpClass() {
+  
+    @Test
+    public void inicializacaoTest(){
+        Troco troco = new Troco(13);
+        /*Impossibilidade de testar a inicialização de troco.
+        Método getValor() para identificar se objeto foi instanciado corretamente
+        */
+    }
+    @Test
+    public void inicializacaoNegativaTest(){
+        Troco troco = new Troco(13);
+        /*Impossibilidade de testar a inicialização de troco.
+        Método getValor() para identificar se objeto foi instanciado corretamente
+        */
     }
     
-    @AfterClass
-    public static void tearDownClass() {
+    @Test
+    public void verificarTrocoTest(){
+        Troco troco = new Troco(23);
+        PapelMoeda[] atual = troco.getPapeisMoeda();
+        /*Impossível criar cenário de teste.
+        Falta do método toString() para verificar se o vetor troco está populado corretamente */
+        
     }
-    
-    @Before
-    public void setUp() {
-    }
-    
-    @After
-    public void tearDown() {
-    }
-
-    // TODO add test methods here.
-    // The methods must be annotated with annotation @Test. For example:
-    //
-    // @Test
-    // public void hello() {}
 }
