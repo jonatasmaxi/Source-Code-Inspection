@@ -43,6 +43,7 @@ public class TrocoTest {
     public void verificarTrocoTest(){
         Troco troco = new Troco(23);
         PapelMoeda[] atual = troco.getPapeisMoeda();
+        System.out.println(atual);
         /*Impossível criar cenário de teste.
         Falta do método toString() para verificar se o vetor troco está populado corretamente */
         
